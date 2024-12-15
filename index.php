@@ -1,6 +1,6 @@
 <?php
 
-$task = 'Current task ';  // backlog в задании
+$task = 'Сurrent tasks'; // backlog в задании
 ?>
 
 <!DOCTYPE html>
@@ -143,7 +143,7 @@ $task = 'Current task ';  // backlog в задании
               </h3>
             </div>
             <div class="card-body connectedSortable" data-status="Current tasks">
-              <?php if (true): ?>
+              <?php if ($task =='Сurrent tasks'): ?>
               <div class="card card-info card-outline" data-task-id="1">
                 <div class="card-header">
                   <h5 class="card-title">Make the main page</h5>
@@ -173,7 +173,29 @@ $task = 'Current task ';  // backlog в задании
                Tasks to do
               </h3>
             </div>
-            <div class="card-body connectedSortable" data-status="to-do">
+            <div class="card-body connectedSortable" data-status="Tasks to do">
+            <?php if ($task == 'Tasks to do'): ?>
+              <div class="card card-info card-outline" data-task-id="1">
+                <div class="card-header">
+                  <h5 class="card-title">Make the main page</h5>
+                  <div class="card-tools">
+                    <a href="#" class="btn btn-tool btn-link">#3</a>
+                    <a href="#" class="btn btn-tool">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>
+                  Create a main page of the site that will contain a list of tasks with the possibility to view, edit, delete
+                  </p>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-file"></i>
+                  </a>
+                  <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
+                </div>
+              </div>
+              <?php endif; ?>
             </div>
           </div>
           <div class="card card-row card-default">
@@ -182,7 +204,29 @@ $task = 'Current task ';  // backlog в задании
                 In progress
               </h3>
             </div>
-            <div class="card-body connectedSortable" data-status="In-progress">
+            <div class="card-body connectedSortable" data-status="In progress">
+            <?php if ($task =='In progress'): ?>
+              <div class="card card-info card-outline" data-task-id="1">
+                <div class="card-header">
+                  <h5 class="card-title">Make the main page</h5>
+                  <div class="card-tools">
+                    <a href="#" class="btn btn-tool btn-link">#3</a>
+                    <a href="#" class="btn btn-tool">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>
+                  Create a main page of the site that will contain a list of tasks with the possibility to view, edit, delete
+                  </p>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-file"></i>
+                  </a>
+                  <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
+                </div>
+              </div>
+              <?php endif; ?>
             </div>
           </div>
           <div class="card card-row card-success">
@@ -192,6 +236,28 @@ $task = 'Current task ';  // backlog в задании
               </h3>
             </div>
             <div class="card-body connectedSortable" data-status="Ready">
+            <?php if ($task=='Ready'): ?>
+              <div class="card card-info card-outline" data-task-id="1">
+                <div class="card-header">
+                  <h5 class="card-title">Make the main page</h5>
+                  <div class="card-tools">
+                    <a href="#" class="btn btn-tool btn-link">#3</a>
+                    <a href="#" class="btn btn-tool">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>
+                  Create a main page of the site that will contain a list of tasks with the possibility to view, edit, delete
+                  </p>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-file"></i>
+                  </a>
+                  <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
+                </div>
+              </div>
+              <?php endif; ?>
             </div>
           </div>
         </div>
